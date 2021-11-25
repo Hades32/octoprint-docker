@@ -52,6 +52,13 @@ Open octoprint at `http://<octoprint_ip_or_url`
 See [Initial Setup](#initial-setup) for configuration values to use during your fist
 launch of OctoPrint using docker.
 
+### Deploy to your SoC with Balena
+
+The easiest way to get OctoPrint running on a Raspberry Pi or similar device is to
+use Balena. This also ensures easy updates and configuration via a UI:
+
+[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/OctoPrint/octoprint-docker)
+
 ### Configuration
 
 #### Enabling Webcam Support with Docker

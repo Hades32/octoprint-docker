@@ -1,4 +1,4 @@
-version: '2.4'
+version: '2.1'
 
 services:
   octoprint:
@@ -6,10 +6,7 @@ services:
     restart: unless-stopped
     ports:
       - 80:80
-    # devices:
-    # use `python -m serial.tools.miniterm` to see what the name is of the printer
-    #  - /dev/ttyACM0:/dev/ttyACM0
-    #  - /dev/video0:/dev/video0
+    privileged: true
     volumes:
      - octoprint:/octoprint
     # uncomment the lines below to ensure camera streaming is enabled when
